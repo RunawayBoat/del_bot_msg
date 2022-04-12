@@ -19,6 +19,6 @@ async def wear(bot, ev):
         while cq[num] != ']':#找到reply,id结束的位置 
             num = num + 1
         messageid = int(cq[13:num])
-        msg_text = f"你发的是回复\n被回复的消息id为-{messageid}\n即将撤回"#可以根据需求注释或修改回复
+        msg_text = f"你发的是回复\n被回复的消息id为{messageid}\n即将撤回"#可以根据需求注释或修改回复
         await bot.send(ev, msg_text)
         await bot.delete_msg(message_id=messageid)
