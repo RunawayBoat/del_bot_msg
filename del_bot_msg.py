@@ -11,7 +11,7 @@ sv = Service(
 async def wear(bot, ev):
     cq = str(ev.message)#获取CQ码
     num = 13
-    st = int(i.find('[CQ:reply,id='))#检查消息是否包含cq码开头
+    st = int(i.find('[CQ:reply,id='))
     if st == -1:
         msg_text = f"你发的不是回复"#可以根据需求注释或修改回复
         await bot.send(ev, msg_text)
