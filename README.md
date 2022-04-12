@@ -1,0 +1,2 @@
+# del_bot_msg
+适用于HoshinoBot，让普通群员可以撤回bot发送的消息的插件
